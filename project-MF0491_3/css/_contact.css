@@ -1,0 +1,149 @@
+#contact #newsletter {
+  display: none;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-bottom: 120px;
+}
+
+#contact-form div {
+  display: flex;
+  flex-direction: column;
+}
+  
+#contact-form div label {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+#contact-form div input,
+#contact-form div textarea {
+  background-color: rgba(107, 112, 141, 0.1);
+  border: none;
+  padding: 22px 20px;
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#contact-form div input {
+  height: 70px;
+}
+
+#contact-form div input::placeholder,
+#contact-form div textarea::placeholder {
+  font-family: var(--main-font);
+  font-size: 15px;
+  line-height: 22.5px;
+  color: var(--text-color);
+}
+
+#contact-form .btn-primary {
+  height: 80px;
+}
+
+@media (min-width: 768px) {
+  #contact-form {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 154px;
+  }
+
+  #contact-form .full-width {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #contact-form div label {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  #contact-form div input,
+  #contact-form div textarea {
+    font-size: 17px;
+    line-height: 25.5px;
+  }
+
+  #contact-form div input::placeholder,
+  #contact-form div textarea::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #contact-section {
+    padding: 0 80px;
+  }
+
+  #contact-form div label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #contact-form div input,
+  #contact-form div textarea {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  #contact-form div input::placeholder,
+  #contact-form div textarea::placeholder {
+    font-size: 17px;
+    line-height: 25.5px;
+  }
+}
+
+/* FORM VALIDATION */
+#contact-form div .input-error {
+  border: 1px solid red;
+}
+
+#contact-form .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@media (min-width: 1025px) {
+  #contact-form .error-message {
+    font-size: 14px;
+  }
+}
+
+
+/* RECEIVED'S PAGE */
+.confirm-message {
+  text-align: center;
+  padding: 80px 50px;
+  margin-bottom: 50px;
+  background-color: var(--light-color);
+}
+
+.confirm-message h2 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .confirm-message {
+    padding: 120px 80px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #confirm-section {
+    padding: 0 80px;
+  }
+  
+  .confirm-message {
+    padding: 150px 100px;
+    margin-bottom: 170px;
+  }
+}

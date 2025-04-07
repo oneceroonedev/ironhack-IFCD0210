@@ -1,0 +1,430 @@
+/* CLAIM SECTION */
+#claim {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#claim h1 {
+  margin-bottom: 20px;
+}
+
+#claim p {
+  margin-bottom: 25px;
+}
+
+#claim a {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+#claim .projects-btn {
+  color: var(--text-color);
+  margin-left: 40px;
+}
+
+#claim .claim-images {
+  position: relative;
+  text-align: center;
+}
+
+#claim .claim-images .card {
+  display: none;
+  left: -65px;
+}
+
+#claim .claim-images .featured-boy {
+  height: auto;
+  width: 100%;
+  margin: 30px auto;
+}
+
+#claim .claim-images .project-accepted {
+  display: none;
+  right: -70px;
+  bottom: -150px;
+}
+
+@media (min-width: 768px) {
+  #claim article {
+    width: 50%;
+  }
+
+  #claim .claim-images .featured-boy {
+    margin: 0;
+  }
+
+  #claim .claim-texts {
+    padding-right: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #claim {
+    margin-bottom: 110px;
+  }
+
+  #claim h1 {
+    margin-bottom: 25px;
+  }
+
+  #claim p {
+    margin-bottom: 30px;
+  }
+
+  #claim a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #claim {
+    margin-bottom: 160px;
+    padding: 0 80px;
+  }
+
+  #claim h1 {
+    margin-bottom: 30px;
+  }
+
+  #claim p {
+    margin-bottom: 40px;
+  }
+
+  #claim a {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  #claim .claim-images .card,
+  #claim .claim-images .project-accepted {
+    display: block;
+    position: absolute;
+    max-width: 380px;
+  }
+
+  #claim .claim-images .featured-boy {
+    height: 635px;
+    width: auto;
+  }
+}
+
+/* BRANDS SECTION */
+#brands {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+#brands a:hover {
+  text-decoration: none;
+}
+
+#brands img {
+  margin: 0 2px 50px;
+  filter: grayscale(1);
+}
+
+#brands img:hover {
+  filter: grayscale(0);
+}
+
+@media (min-width: 768px) {
+  #brands {
+    justify-content: space-between;
+  }
+
+  #brands img {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #brands {
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #brands {
+    margin-bottom: 235px;
+    padding: 0 133px;
+  }
+}
+
+/* PROJECTS SECTION */
+#projects {
+  margin-bottom: 120px;
+}
+
+#projects .projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+
+#projects .project-card {
+  width: 340px;
+  box-shadow: 0 38.78px 77.55px 0 rgba(0, 0, 0, 0.1);
+}
+
+#projects .project-card:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+#projects .project-card figure {
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#projects .project-card.simplify figure {
+  background-image: url('../assets/projects/simplify.jpg');
+}
+
+#projects .project-card.dashcoin figure {
+  background-image: url('../assets/projects/dashcoin.jpg');
+}
+
+#projects .project-card.vectorify figure {
+  background-image: url('../assets/projects/vectorify.jpg');
+}
+
+#projects .project-card .card-content {
+  padding: 30px;
+}
+
+#projects .project-card .card-content .card-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+#projects .project-card .card-content .card-text {
+  font-size: 17px;
+  line-height: 25.5px;
+  margin-bottom: 54px;
+}
+
+#projects .project-card .card-content .card-link {
+  font-size: 17px;
+  line-height: 25.5px;
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #projects .projects-list {
+    gap: 40px 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #projects {
+    padding: 0 80px;
+    margin-bottom: 200px;
+  }
+
+  #projects .projects-list {
+    gap: 40px;
+    justify-content: space-between;
+  }
+}
+
+/* REVIEWS SECTION */
+#reviews {
+  background-color: #292E47;
+  background-image: url('../assets/reviews/orbit.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 50px;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+#reviews h3 {
+  color: var(--light-color);
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+#reviews .client-review {
+  font-size: 24px;
+  line-height: 38.4px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 60px;
+  text-align: center;
+  max-width: 596px;
+}
+
+#reviews .client {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#reviews .client img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#reviews .client .client-name {
+  font-size: 17px;
+  line-height: 1;
+  color: #A2D6F9;
+  margin-bottom: 5px;
+}
+
+#reviews .client .client-company {
+  font-size: 13px;
+  line-height: 15px;
+  color: #F4F6FC;
+}
+
+#reviews .memojis {
+  display: none;
+}
+
+#reviews .memojis img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+#reviews .memojis .girl-luck {
+  left: 50px;
+  top: 50px;
+}
+
+#reviews .memojis .boy-cap {
+  right: 50px;
+  top: 50px;
+}
+
+#reviews .memojis .boy-ok {
+  left: 50px;
+  bottom: 50px;
+}
+
+#reviews .memojis .girl-party {
+  right: 50px;
+  bottom: 50px;
+}
+
+@media (min-width: 1025px) {
+  #reviews {
+    padding: 120px;
+    margin-bottom: 200px;
+  }
+
+  #reviews h3 {
+    margin-bottom: 104px;
+  }
+
+  #reviews .client-review {
+    margin-bottom: 105px;
+  }
+
+  #reviews .memojis {
+    display: block;
+  }
+}
+
+/* SERVICES */
+#services {
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+#services .services-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 0;
+}
+
+#services .service-card {
+  width: 340px;
+  background-color: var(--light-color);
+  padding: 40px 30px 30px;
+  box-shadow: 0 38.78px 77.55px 0 rgba(0, 0, 0, 0.1);
+}
+
+#services .service-card:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+#services figure {
+  width: 80px;
+  height: 80px;
+  background-color: #ECF7FF;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#services figure img {
+  width: 40px;
+  height: 40px;
+}
+
+#services .service-card .card-content .card-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: #292E47;
+}
+
+#services .service-card .card-content .card-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #6B708D;
+  margin-bottom: 36px;
+}
+
+#services .service-card .card-content .card-link {
+  font-size: 17px;
+  line-height: 25.5px;
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #services .services-list {
+    gap: 30px 25px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #services {
+    padding: 0 80px;
+    margin-bottom: 200px;
+  }
+
+  #services .services-list {
+    justify-content: space-between;
+    gap: 40px;
+  }
+}

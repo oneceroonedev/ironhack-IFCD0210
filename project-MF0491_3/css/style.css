@@ -1,0 +1,21 @@
+/* VARIABLES AND GLOBAL CONFIGURATION */
+@import '_generic.css';
+
+/* HEADER */
+@import '_header.css';
+
+/* HOME PAGE */
+@import '_home.css';
+
+/* PROJECT'S PAGE */
+@import '_project.css';
+
+/* CONTACT'S PAGE */
+@import '_contact.css';
+
+/* ERROR'S PAGE */
+@import '_error.css';
+
+/* FOOTER */
+@import '_footer.css';
+

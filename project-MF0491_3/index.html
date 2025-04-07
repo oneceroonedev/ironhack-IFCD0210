@@ -4,12 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <link rel="icon" type="image/jpg" href="/assets/icons/circle-favicon.ico"/>
+
     <script src="./js/header.js" defer></script>
     <script src="./js/footer.js" defer></script>
   </head>
-  <body>
+  <body id="home">
     <header id="header"></header>
+
+    <section id="claim">
+      <article class="claim-texts">
+        <h1>Empower Your Business With Stunning Design!</h1>
+        <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
+        <a class="btn-primary" href="#newsletter">Get in touch</a>
+        <a class="projects-btn" href="#projects">See our work</a>
+      </article>
+      <article class="claim-images">
+        <img class="card" src="./assets/claim/card-1.png" alt="" />
+        <img class="featured-boy" src="./assets/claim/hero-image.png" alt="" />
+        <img class="project-accepted" src="./assets/claim/card-2.png" alt="" />
+      </article>
+    </section>
+
+    <section id="brands">
+      <a href="https://www.airbnb.es/" target="_blank">
+        <img src="./assets/brands/airbnb-logo.svg" alt="airbnb-logo" />
+      </a>
+      <a href="https://www.google.com/" target="_blank">
+        <img src="./assets/brands/google-logo.svg" alt="google-logo" />
+      </a>
+      <a href="https://www.microsoft.com/" target="_blank">
+        <img src="./assets/brands/microsoft-logo.svg" alt="microsoft-logo" />
+      </a>
+      <a href="https://www.fedex.com/" target="_blank">
+        <img src="./assets/brands/fedex-logo.svg" alt="fedex-logo" />
+      </a>
+      <a href="https://www.amazon.com/" target="_blank">
+        <img src="./assets/brands/amazon-logo.svg" alt="amazon-logo" />
+      </a>
+    </section>
+
+    <section id="projects">
+      <h2 class="title-section">Recent Projects</h2>
+      <div class="projects-list">
+        <article class="project-card simplify">
+          <figure></figure>
+          <div class="card-content">
+            <h2 class="card-title">Simplify</h2>
+            <p class="card-text">UI Design & App Development</p>
+            <a href="/pages/project.html?uuid=1" class="card-link">Learn more</a>
+          </div>
+        </article>
+        <article class="project-card dashcoin">
+          <figure></figure>
+          <div class="card-content">
+            <h2 class="card-title">Dashcoin</h2>
+            <p class="card-text">Web Development</p>
+            <a href="/pages/project.html?uuid=2" class="card-link">Learn more</a>
+          </div>
+        </article>
+        <article class="project-card vectorify">
+          <figure></figure>
+          <div class="card-content">
+            <h2 class="card-title">Vectorify</h2>
+            <p class="card-text">User Experience Design</p>
+            <a href="/pages/project.html?uuid=3" class="card-link">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h3>Hear What Our Clients Have to Say</h3>
+      <p class="client-review">“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+      <div class="client">
+        <img src="./assets/reviews/profile.png" alt="profile" />
+        <div class="data-client">
+          <p class="client-name">Kristin Watson</p>
+          <p class="client-company">Booking.com</p>
+        </div>
+      </div>
+      <div class="memojis">
+        <img class="girl-luck" src="./assets/reviews/memoji-1.png" alt="Memoji girl luck" />
+        <img class="boy-cap" src="./assets/reviews/memoji-2.png" alt="Memoji boy cap" />
+        <img class="boy-ok" src="./assets/reviews/memoji-3.png" alt="Memoji boy ok" />
+        <img class="girl-party" src="./assets/reviews/memoji-4.png" alt="Memoji girl party" />
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="title-section">Our Services</h2>
+      <div class="services-list">
+        <article class="service-card">
+          <figure>
+            <img src="./assets/icons/ui-design.svg" alt="ui-design-icon" />
+          </figure>
+          <div class="card-content">
+            <h2 class="card-title">User Interface Design</h2>
+            <p class="card-text">Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+            <a href="/pages/404.html" class="card-link">Learn more</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <figure>
+            <img src="./assets/icons/ux-design.svg" alt="ux-desig-icon" />
+          </figure>
+          <div class="card-content">
+            <h2 class="card-title">User Experience Design</h2>
+            <p class="card-text">Circle always focuses on delivering the best user experience to your customers.</p>
+            <a href="/pages/404.html" class="card-link">Learn more</a>
+          </div>
+        </article>
+        <article class="service-card">
+          <figure>
+            <img src="./assets/icons/application-development.svg" alt="application-development-icon" />
+          </figure>
+          <div class="card-content">
+            <h2 class="card-title">Application Development</h2>
+            <p class="card-text">We develop high-quality mobile and web applications using the latest technology stack.</p>
+            <a href="/pages/404.html" class="card-link">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    
     <footer id="footer"></footer>
   </body>
 </html>
