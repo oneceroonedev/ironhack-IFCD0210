@@ -38,7 +38,7 @@ La base de datos original contenía información sobre los clientes, los vuelos 
 ### Tablas Creadas
 
 1. **Clientes**: Almacena la información de los clientes.
-2. **Vuelos**: Contiene la información sobre los vuelos, como el número de vuelo, el tipo de aeronave y la distancia.
+2. **Vuelos**: Contiene la información sobre los vuelos, como el número de vuelo, el tipo de avión y la distancia.
 3. **Reservas**: Registra las reservas de los clientes, con una clave foránea tanto para los clientes como para los vuelos.
 
 ### Script DDL para Crear las Tablas
@@ -69,22 +69,22 @@ CREATE TABLE Reservations (
 
 ## Parte 3: Consultas SQL
 
-### 1. Total de Vuelos en la Base de Datos
+### 3. Total de vuelos
 ```sql
 SELECT COUNT(*) AS total_flights FROM Flights;
 ```
 
-### 2. Distancia Promedio de los Vuelos
+### 4. Distancia media de los vuelos
 ```sql
 SELECT AVG(flight_mileage) AS average_flight_distance FROM Flights;
 ```
 
-### 3. Promedio de Asientos en los Vuelos
+### 5. Media de asientos en los vuelos
 ```sql
 SELECT AVG(total_seats) AS average_seats FROM Flights;
 ```
 
-### 4. Promedio de Millas Recorridas por Clientes Agrupados por Estado
+### 6. Media de millas recorridas por los clientes agrupados por estado
 ```sql
 SELECT c.customer_status, AVG(r.customer_mileage) AS average_mileage
 FROM Reservations r
@@ -92,7 +92,7 @@ JOIN Customers c ON r.customer_id = c.customer_id
 GROUP BY c.customer_status;
 ```
 
-### 5. Máximo de Millas Recorridas por Clientes Agrupados por Estado
+### 7. Máximo de millas recorridas por los clientes agrupados por estado
 ```sql
 SELECT c.customer_status, MAX(r.customer_mileage) AS max_mileage
 FROM Reservations r
@@ -100,20 +100,20 @@ JOIN Customers c ON r.customer_id = c.customer_id
 GROUP BY c.customer_status;
 ```
 
-### 6. Total de Aeronaves cuyo Nombre Contiene "Boeing"
+### 8. Total de aviones cuyo nombre contiene "Boeing"
 ```sql
 SELECT COUNT(*) AS total_boeing_aircraft
 FROM Flights
 WHERE aircraft LIKE '%Boeing%';
 ```
 
-### 7. Vuelos con Distancia Entre 300 y 2000 Millas
+### 9. Vuelos con distancia entre 300 y 2000 millas
 ```sql
 SELECT * FROM Flights
 WHERE flight_mileage BETWEEN 300 AND 2000;
 ```
 
-### 8. Distancia Promedio de Vuelo Reservada Agrupada por Estado de Cliente
+### 10. Distancia media de vuelo reservado agrupada por estado de cliente
 ```sql
 SELECT c.customer_status, AVG(f.flight_mileage) AS average_flight_distance
 FROM Reservations r
@@ -122,7 +122,7 @@ JOIN Customers c ON r.customer_id = c.customer_id
 GROUP BY c.customer_status;
 ```
 
-### 9. Aeronave Más Reservada por los Clientes con Estado "Gold"
+### 11. Aviones más reservados por los clientes con estado "Gold"
 ```sql
 SELECT f.aircraft, COUNT(*) AS reservation_count
 FROM Reservations r
