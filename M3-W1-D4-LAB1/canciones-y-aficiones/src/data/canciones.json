@@ -1,0 +1,37 @@
+[
+    {
+      "titulo": "Imagine",
+      "album": "Imagine",
+      "imagenAlbum": "https://m.media-amazon.com/images/I/81WJk15J6eL._UF1000,1000_QL80_.jpg",
+      "duracion": 183,
+      "valoracion": 4
+    },
+    {
+      "titulo": "Bohemian Rhapsody",
+      "album": "A Night at the Opera",
+      "imagenAlbum": "https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png",
+      "duracion": 354,
+      "valoracion": 5
+    },
+    {
+      "titulo": "Billie Jean",
+      "album": "Thriller",
+      "imagenAlbum": "https://m.media-amazon.com/images/I/61jWQ0Bg9ZL._UF1000,1000_QL80_.jpg",
+      "duracion": 293,
+      "valoracion": 5
+    },
+    {
+      "titulo": "Smells Like Teen Spirit",
+      "album": "Nevermind",
+      "imagenAlbum": "https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg",
+      "duracion": 301,
+      "valoracion": 4
+    },
+    {
+      "titulo": "Shape of You",
+      "album": "Divide",
+      "imagenAlbum": "https://upload.wikimedia.org/wikipedia/en/4/45/Divide_cover.png",
+      "duracion": 233,
+      "valoracion": 4
+    }
+  ]  
