@@ -5,19 +5,20 @@ Create your own REACT project containing:
 - A JSON file with songs you like (5 songs)
 
 Each song must have:
-{
 
-title: String,
+    {
 
-album: String,
+    title: String,
 
-albumImage: String (url)
+    album: String,
 
-duration: integer,
+    albumImage: String (url)
 
-rating: integer
+    duration: integer,
 
-}
+    rating: integer
+
+    }
 
 - A component that displays the list of songs
 
